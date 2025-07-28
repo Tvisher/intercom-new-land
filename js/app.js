@@ -25,8 +25,11 @@ const skeakersSlider = new Swiper('.six-section-slider', {
 
 const partnersSlider = new Swiper('.ten-section-slider', {
     slidesPerView: 'auto',
-    speed: 1000,
+    speed: 1200,
     spaceBetween: 33,
+    autoplay: {
+        delay: 5000,
+    },
 });
 
 
