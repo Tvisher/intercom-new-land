@@ -686,7 +686,6 @@ body {
     background-repeat: repeat-x;
     background-position: center bottom;
     pointer-events: none;
-
   }
 }
 
@@ -1013,4 +1012,153 @@ body {
   font-style: normal;
   font-weight: 400;
   line-height: 150%;
+}
+
+
+.nine-section {
+  padding-top: 55px;
+  padding-bottom: 50px;
+}
+
+.faq {
+  margin-top: 32px;
+}
+
+.faq__item {
+  padding: 20px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+
+  &:last-child {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  }
+}
+
+.faq__head {
+  position: relative;
+  padding: 15px 40px;
+  padding-right: 280px;
+  color: #FFF;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  cursor: pointer;
+
+  &::after {
+    position: absolute;
+    content: '';
+    width: 60px;
+    height: 60px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3e%3cpath opacity='0.3' d='M30 59.5C13.7076 59.5 0.5 46.2924 0.499997 30C0.499996 13.7076 13.7076 0.500005 30 0.500003C46.2924 0.500001 59.5 13.7076 59.5 30C59.5 46.2924 46.2924 59.5 30 59.5Z' stroke='white'/%3e%3cpath d='M18 24L30 36L42 24' stroke='%23BE247C' stroke-width='2'/%3e%3c/svg%3e ");
+    top: 50%;
+    transform: translateY(-50%);
+    right: 40px;
+    transition: transform .3s ease-in-out;
+  }
+
+  &.open::after {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.faq__body {
+  display: none;
+  padding-left: 40px;
+  padding-right: 280px;
+  color: #FFF;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 133.333%;
+}
+
+
+.ten-section-slider {
+  overflow: visible;
+}
+
+
+.ten-section {
+  padding: 350px 0;
+  background-color: #FDFEFE;
+  position: relative;
+
+  .section-title {
+    color: #0B0B0C;
+    margin-bottom: 24px;
+  }
+
+  &::after {
+    position: absolute;
+    left: 0;
+    top: -10px;
+    content: '';
+    height: 325px;
+    width: 100%;
+    z-index: 2;
+    transform: scaleY(-1);
+    background-image: url(../img/houses.svg);
+    background-repeat: repeat-x;
+    background-position: right bottom;
+    pointer-events: none;
+    background-size: auto 100%;
+  }
+
+  &::before {
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    content: '';
+    height: 325px;
+    width: 100%;
+    z-index: 2;
+    background-image: url(../img/houses.svg);
+    background-repeat: repeat-x;
+    background-position: center bottom;
+    background-size: auto 100%;
+    pointer-events: none;
+  }
+}
+
+.partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 36px 20px;
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+.partner__logo {
+  width: 200px;
+  height: 120px;
+  margin-bottom: 23px;
+
+  img {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-position: center;
+  }
+}
+
+.partner__name {
+  margin-top: auto;
+  margin-bottom: 4px;
+  color: #0B0B0C;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.partner__descr {
+  color: #0B0B0C;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 120%;
 }

@@ -9,6 +9,7 @@ const secondSectionSlider = new Swiper('.second-section-slider', {
 });
 
 
+
 const skeakersSlider = new Swiper('.six-section-slider', {
     slidesPerView: 'auto',
     speed: 1000,
@@ -20,6 +21,17 @@ const skeakersSlider = new Swiper('.six-section-slider', {
 });
 
 
+
+
+const partnersSlider = new Swiper('.ten-section-slider', {
+    slidesPerView: 'auto',
+    speed: 1000,
+    spaceBetween: 33,
+});
+
+
+
+
 const videoElParent = document.querySelector('.seven-section__video-wrapper');
 const videoEl = videoElParent.querySelector('video');
 
@@ -29,4 +41,15 @@ videoEl.addEventListener('play', () => {
 
 videoEl.addEventListener('pause', () => {
     videoElParent.classList.remove('video-playing');
+});
+
+
+
+
+$(".faq__head").on("click", function () {
+    const toggleBody = $(this).parent('.faq__item').find('.faq__body');
+    $(this).toggleClass('open')
+    toggleBody.slideToggle("slow", function () {
+
+    });
 });
