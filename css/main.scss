@@ -318,6 +318,37 @@ body {
 }
 
 
+@keyframes tranformToLeft {
+  0% {
+    transform: translateX(50%) scaleY(-1);
+  }
+
+  50% {
+    transform: translateX(25%) scaleY(-1);
+  }
+
+  100% {
+    transform: translateX(50%) scaleY(-1);
+
+  }
+}
+
+
+@keyframes tranformToRight {
+  0% {
+    transform: translateX(-50%);
+  }
+
+  50% {
+    transform: translateX(-25%);
+  }
+
+  100% {
+    transform: translateX(-50%);
+
+  }
+}
+
 .btn {
   padding: 16px 32px;
   border-radius: 16px;
@@ -676,16 +707,18 @@ body {
 
   &::after {
     position: absolute;
-    left: 0;
+    left: 50%;
+    transform: translateX(-50%);
     bottom: -10px;
     content: '';
     height: 200px;
-    width: 100%;
+    width: 400%;
     z-index: 2;
     background-image: url(../img/houses-v2.svg);
     background-repeat: repeat-x;
     background-position: center bottom;
     pointer-events: none;
+    animation: tranformToRight 120s linear infinite;
   }
 }
 
@@ -1125,36 +1158,7 @@ body {
   }
 }
 
-@keyframes tranformToLeft {
-  0% {
-    transform: translateX(50%) scaleY(-1);
-  }
 
-  50% {
-    transform: translateX(25%) scaleY(-1);
-  }
-
-  100% {
-    transform: translateX(50%) scaleY(-1);
-
-  }
-}
-
-
-@keyframes tranformToRight {
-  0% {
-    transform: translateX(-50%);
-  }
-
-  50% {
-    transform: translateX(-25%);
-  }
-
-  100% {
-    transform: translateX(-50%);
-
-  }
-}
 
 .partner {
   display: flex;
