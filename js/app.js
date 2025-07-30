@@ -93,16 +93,17 @@ function updateTimer() {
     const diff = targetDate - now;
 
     if (diff <= 0) {
-        timerSpan.textContent = '00:00:00';
+        timerSpan.textContent = '00д 00ч 00м';
         clearInterval(intervalId);
         return;
     }
 
-    const hours = Math.floor(diff / 1000 / 60 / 60);
-    const minutes = Math.floor((diff / 1000 / 60) % 60);
-    const seconds = Math.floor((diff / 1000) % 60);
+    const totalMinutes = Math.floor(diff / 1000 / 60);
+    const days = Math.floor(totalMinutes / 60 / 24);
+    const hours = Math.floor((totalMinutes / 60) % 24);
+    const minutes = totalMinutes % 60;
 
-    timerSpan.textContent = `${pad(hours)}:${pad(minutes)}:${pad(seconds)}`;
+    timerSpan.textContent = `${pad(days)}д : ${pad(hours)}ч : ${pad(minutes)}м`;
 }
 
 function pad(num) {
