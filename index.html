@@ -14,37 +14,75 @@
     <link rel="preload" href="./fonts/DRUZHOK.woff2" as="font" type="font/woff2" crossorigin>
 
     <link rel="stylesheet" href="./css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="./css/aos.css" />
     <link rel="stylesheet" href="./css/main.min.css">
+    <link rel="stylesheet" href="./css/custom.min.css">
 </head>
 
 <body>
+    <div class="mob-menu">
+        <div class="mob-menu-btn-close">
+            <span></span>
+            <span></span>
+        </div>
+        <a href="#">Премия</a>
+        <a href="#">Медиа</a>
+        <a href="#">Программа</a>
+        <a href="#six-section">Спикеры</a>
+        <a href="#nine-section">FAQ</a>
+    </div>
     <header class="header">
         <div class="container">
             <div class="header-top">
-                <a href="#" class="header__logo">
+                <a href="#" class="header__logo" data-aos="fade-down">
                     <picture>
                         <source srcset="./img/logo-mob.png" media="(max-width:576px)">
                         <img src="./img/header-logo.svg" alt="">
                     </picture>
                 </a>
-                <div class="header__menu">
+                <div class="header__menu" data-aos="fade-down">
                     <a href="#">Премия</a>
                     <a href="#">Медиа</a>
                     <a href="#">Программа</a>
                     <a href="#six-section">Спикеры</a>
                     <a href="#nine-section">FAQ</a>
                 </div>
-                <div class="header__plate">
+                <div class="mob-menu-btn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="header__plate" data-aos="fade-in">
                     До конференции <span data-date="30.08.2025">00:00:00</span>
                 </div>
             </div>
             <div class="main-screen">
-                <p class="main-screen__subtitle">Добро пожаловать</p>
-                <h1 class="main-screen__title">
-                    в Страну<br> <span>Интеркомм</span> 2025
+                <p class="main-screen__subtitle" data-aos="zoom-in-up" data-aos-delay="">Добро пожаловать</p>
+                <h1 class="main-screen__title" data-aos="zoom-in-up" data-aos-delay="200">
+                    <!-- в Страну<br> <span>Интеркомм</span> 2025 -->
+
+                    <svg width="290" height="150" viewBox="0 0 290 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g clip-path="url(#clip0_830_791)">
+                            <path
+                                d="M5.3 34.3002V11.5502C5.3 10.2502 5.3 8.5502 5.15 7.9002C5 6.9502 4.6 6.2502 3.45 5.9502C2.8 5.7502 0.5 5.7002 0.5 5.7002V5.0002H11.1C20.95 5.0002 23.5 8.7502 23.5 12.5002C23.5 15.1502 21.55 18.0502 16.8 19.2002C25.85 20.3002 29.35 24.6502 29.35 29.3502C29.35 33.2002 27.15 40.0002 11.1 40.0002H0.5V39.3002C0.5 39.3002 2.8 39.2502 3.45 39.0502C4.6 38.7502 5 38.0502 5.15 37.1002C5.3 36.4502 5.3 35.2502 5.3 34.3002ZM12 19.7502V18.9502H13C16.2 18.9502 19.3 16.4502 19.3 12.2002C19.3 8.2002 16.65 5.6002 11.1 5.6002H9.5V39.2002H11.1C16.6 39.2002 25.2 36.5002 25.2 28.8002C25.2 24.5002 21.15 20.2502 13 19.7502H12ZM66.834 1.0502V14.2502H66.134C63.384 9.3002 59.134 6.6502 53.934 6.6502C38.184 6.6502 44.334 38.2002 61.334 38.2002C64.584 38.2002 67.434 35.5002 67.434 29.7002C67.434 24.0502 63.634 16.4002 63.634 16.4002L64.334 16.0502C65.884 19.2502 68.234 25.1002 68.234 29.6502C68.234 37.3502 63.484 40.5502 57.934 40.5502C46.334 40.5502 42.334 28.2502 42.334 22.4002C42.334 10.1502 49.634 4.1502 58.034 4.1502C62.584 4.1502 65.534 6.8502 65.534 6.8502L66.134 1.0502H66.834ZM73.0031 5.1002L101.103 5.0502L100.953 0.700195H101.653L102.203 5.6502L104.403 23.6002L103.703 23.7002C103.703 23.7002 102.853 18.4002 102.503 15.9002C101.453 8.4002 99.9531 6.0002 94.6531 5.9002C93.6031 5.9002 91.7531 5.8502 91.7531 5.8502H89.1531V39.0002L93.7031 39.3502V40.0502H80.3031V39.4002C80.3031 39.4002 82.5031 39.3502 83.1031 39.2002C84.3031 38.8502 84.6031 38.2002 84.7531 37.3002C84.8531 36.7002 84.9531 35.4502 84.9531 34.6002V5.9002H82.3531C82.3531 5.9002 80.5031 5.9502 79.4531 5.9502C74.1531 6.0502 72.6531 8.4502 71.6031 15.9502C71.2531 18.4502 70.4031 23.7502 70.4031 23.7502L69.7031 23.6502L71.9031 5.7002L72.4531 0.750195H73.1531L73.0031 5.1002ZM119.368 40.0002H103.918V39.3002C103.918 39.3002 106.218 39.2502 106.868 39.0502C108.018 38.7502 108.418 38.0502 108.568 37.1002C108.718 36.4502 108.718 34.7502 108.718 33.4502V10.7002C108.718 9.7502 108.718 8.5502 108.568 7.9002C108.418 6.9502 108.018 6.2502 106.868 5.9502C106.218 5.7502 103.918 5.7002 103.918 5.7002V5.0002H114.268C127.468 5.0002 132.218 11.5502 132.218 17.9502C132.218 24.8002 127.168 30.9502 117.168 30.9502H115.568V30.1502H117.168C124.268 30.1502 128.018 23.6502 128.018 17.9002C128.018 9.4002 121.618 5.8002 114.268 5.8002H112.918V36.8502L112.868 38.8502L119.368 39.3502V40.0002ZM141.227 39.3002L146.127 38.9002V29.3002H133.927L128.627 38.9502L133.177 39.3002V40.0002H121.877V39.3002C122.527 39.3002 123.127 39.2502 123.627 39.2002C127.127 38.8502 129.577 35.7502 131.077 32.8002L142.577 11.6502L142.427 11.9502C142.827 11.2502 143.777 9.5502 144.377 8.0502C144.477 7.8002 144.527 7.5002 144.527 7.2502C144.527 6.5502 144.177 5.9502 142.977 5.9002C142.277 5.8502 132.677 5.7002 132.677 5.7002V5.0002H155.177V5.7002C155.177 5.7002 152.877 5.7502 152.227 5.9502C151.027 6.2502 150.677 6.9502 150.477 7.9002C150.377 8.5502 150.377 9.7502 150.327 10.7002V34.3002C150.377 35.2502 150.377 36.4502 150.477 37.1002C150.677 38.0502 151.027 38.7502 152.227 39.0502C152.877 39.2502 155.177 39.3002 155.177 39.3002V40.0002H141.227V39.3002ZM134.377 28.5002H146.127V6.9002L134.377 28.5002ZM172.864 39.3002L177.764 38.9002V22.3502H165.164V38.9002L170.064 39.3002V40.0002H156.164V39.3002C156.164 39.3002 158.464 39.2502 159.114 39.0502C160.264 38.7502 160.664 38.0502 160.814 37.1002C160.964 36.4502 160.964 35.2502 160.964 34.3002V11.5502C160.964 10.2502 160.964 8.5502 160.814 7.9002C160.664 6.9502 160.264 6.2502 159.114 5.9502C158.464 5.7502 156.164 5.7002 156.164 5.7002V5.0002H170.064V5.7002L165.164 6.1002V21.5502H177.764V6.1002L172.864 5.7002V5.0002H186.814V5.7002C186.814 5.7002 184.514 5.7502 183.864 5.9502C182.664 6.2502 182.314 6.9502 182.164 7.9002C182.014 8.5502 182.014 10.2502 181.964 11.5502V34.3002C182.014 35.2502 182.014 36.4502 182.164 37.1002C182.314 38.0502 182.664 38.7502 183.864 39.0502C184.514 39.2502 186.814 39.3002 186.814 39.3002V40.0002H172.864V39.3002ZM205.105 5.0002H216.405V5.7002C216.405 5.7002 214.005 5.7502 213.255 5.8502C211.705 6.0502 211.555 7.0002 211.705 8.1502C211.905 9.5002 212.155 11.5002 212.305 12.4002L216.005 34.6502C216.055 34.8002 216.405 36.5002 216.405 37.8502C216.405 38.4502 216.155 39.0002 215.705 39.4002C215.305 39.8002 214.755 40.0002 214.155 40.0002H192.755C191.305 40.0002 188.95 39.2 188 38C187.5 37.25 194.5 37.3502 196.5 37.3502C196.5 37.3502 217 38.2679 213.5 35.2679C213.3 35.0679 193.705 8.3002 192.655 7.5502C191.505 6.7502 190.955 6.4002 189.405 6.0502C187.605 5.7002 185.805 5.7002 185.805 5.7002V5.0002H200.105V5.7002L197.705 5.8002L213.355 23.5002L210.455 6.1502L205.105 5.7002V5.0002ZM25.05 144.95L0.55 145C0.5 132.85 22.5 128.7 22.5 117.1C22.5 112.75 19.55 110.35 16 110.35C8.85 110.35 4.3 119.3 3.5 127.65H2.8L4 105.65H4.7L4.8 114.35C6.25 113.25 9.6 109.45 16.45 109.45C23.15 109.45 26.7 112.45 26.7 116.8C26.7 128.1 5.35 128.15 4.85 144.15H15.7C15.7 144.15 17.55 144.1 18.6 144.1C23.9 144 25.3 141.6 26.45 134.1C26.85 131.55 27.65 126.3 27.65 126.3L28.35 126.4L26.15 144.35L25.6 149.3H24.9L25.05 144.95ZM30.334 127.6C30.334 116.7 36.184 109.25 43.934 109.25C53.434 109.25 58.884 119 58.884 127.6C58.884 138.15 52.484 145.55 44.884 145.55C35.584 145.55 30.334 136.05 30.334 127.6ZM56.134 131.8C56.134 123.75 50.634 111.35 40.934 111.35C35.734 111.35 33.134 116.5 33.134 123.05C33.134 131.75 38.634 143.45 47.684 143.45C52.984 143.45 56.134 138.6 56.134 131.8ZM84.425 144.95L59.925 145C59.875 132.85 81.875 128.7 81.875 117.1C81.875 112.75 78.925 110.35 75.375 110.35C68.225 110.35 63.675 119.3 62.875 127.65H62.175L63.375 105.65H64.075L64.175 114.35C65.625 113.25 68.975 109.45 75.825 109.45C82.525 109.45 86.075 112.45 86.075 116.8C86.075 128.1 64.725 128.15 64.225 144.15H75.075C75.075 144.15 76.925 144.1 77.975 144.1C83.275 144 84.675 141.6 85.825 134.1C86.225 131.55 87.025 126.3 87.025 126.3L87.725 126.4L85.525 144.35L84.975 149.3H84.275L84.425 144.95ZM114.409 105.65L114.959 110.6L116.509 123.25C117.259 124.55 117.759 126.3 117.759 128.65C117.759 136.2 109.609 145.4 100.409 145.4C85.659 145.4 87.059 131.1 94.159 121V115.15C94.159 114.3 94.109 113.15 94.009 112.55C93.859 111.7 93.509 111.05 92.459 110.85C91.609 110.7 88.209 110.7 88.209 110.7V110H113.859L113.709 105.65H114.409ZM102.909 110.8H98.359V124.8C100.909 122.05 104.459 119.5 109.059 119.5C111.159 119.5 113.759 120 115.559 121.95C115.209 119.35 114.809 116.65 114.609 115.3C114.209 112.7 113.959 111.45 112.159 111.2C110.259 110.9 102.909 110.8 102.909 110.8ZM94.159 131V122.4C92.759 124.7 89.809 130 89.809 135.25C89.809 141 93.409 144.25 97.659 144.25C104.609 144.25 113.859 135.75 113.859 126.25C113.859 122.2 111.409 120.4 108.209 120.4C101.309 120.4 95.909 129.05 94.959 131H94.159Z"
+                                fill="white" />
+                            <path
+                                d="M17.2 91.3002L22.1 90.9002V59.3002L10.3 91.0002L14.4 91.3002V92.0002H0.5V91.3002C0.5 91.3002 2.8 91.2502 3.45 91.0502C4.6 90.7502 5 90.0502 5.15 89.1002C5.3 88.4502 5.3 87.2502 5.3 86.3002V62.7002C5.3 61.7502 5.3 60.5502 5.15 59.9002C5 58.9502 4.6 58.2502 3.45 57.9502C2.8 57.7502 0.5 57.7002 0.5 57.7002V57.0002H14.4V57.7002L9.5 58.1002V90.8002L21.7 58.0502L17.2 57.7002V57.0002H31.15V57.7002C31.15 57.7002 28.85 57.7502 28.2 57.9502C27 58.2502 26.65 58.9502 26.5 59.9002C26.35 60.5502 26.35 61.7502 26.3 62.7002V86.3002C26.35 87.2502 26.35 88.4502 26.5 89.1002C26.65 90.0502 27 90.7502 28.2 91.0502C28.85 91.2502 31.15 91.3002 31.15 91.3002V92.0002H17.2V91.3002ZM48.8406 91.3002L53.7406 90.9002V74.3502H41.1406V90.9002L46.0406 91.3002V92.0002H32.1406V91.3002C32.1406 91.3002 34.4406 91.2502 35.0906 91.0502C36.2406 90.7502 36.6406 90.0502 36.7906 89.1002C36.9406 88.4502 36.9406 87.2502 36.9406 86.3002V63.5502C36.9406 62.2502 36.9406 60.5502 36.7906 59.9002C36.6406 58.9502 36.2406 58.2502 35.0906 57.9502C34.4406 57.7502 32.1406 57.7002 32.1406 57.7002V57.0002H46.0406V57.7002L41.1406 58.1002V73.5502H53.7406V58.1002L48.8406 57.7002V57.0002H62.7906V57.7002C62.7906 57.7002 60.4906 57.7502 59.8406 57.9502C58.6406 58.2502 58.2906 58.9502 58.1406 59.9002C57.9906 60.5502 57.9906 62.2502 57.9406 63.5502V86.3002C57.9906 87.2502 57.9906 88.4502 58.1406 89.1002C58.2906 90.0502 58.6406 90.7502 59.8406 91.0502C60.4906 91.2502 62.7906 91.3002 62.7906 91.3002V92.0002H48.8406V91.3002ZM65.5813 57.1002L93.6813 57.0502L93.5313 52.7002H94.2313L94.7813 57.6502L96.9813 75.6002L96.2813 75.7002C96.2813 75.7002 95.4313 70.4002 95.0813 67.9002C94.0313 60.4002 92.5313 58.0002 87.2313 57.9002C86.1813 57.9002 84.3313 57.8502 84.3313 57.8502H81.7313V91.0002L86.2813 91.3502V92.0502H72.8813V91.4002C72.8813 91.4002 75.0813 91.3502 75.6813 91.2002C76.8813 90.8502 77.1813 90.2002 77.3313 89.3002C77.4313 88.7002 77.5313 87.4502 77.5313 86.6002V57.9002H74.9313C74.9313 57.9002 73.0813 57.9502 72.0313 57.9502C66.7313 58.0502 65.2313 60.4502 64.1813 67.9502C63.8313 70.4502 62.9812 75.7502 62.9812 75.7502L62.2812 75.6502L64.4813 57.7002L65.0313 52.7502H65.7313L65.5813 57.1002ZM105.496 57.8002V67.6502H112.146L110.296 63.3502L110.946 63.0502L122.346 84.2002L121.746 84.5502C121.746 84.5502 115.696 73.7002 114.396 71.9502C112.396 69.2002 110.246 68.4502 106.996 68.4502H105.496V91.2002H112.546C114.196 91.2002 115.746 91.1502 116.796 91.0502C119.896 90.8502 122.146 90.6002 123.146 85.1502C123.996 80.6502 124.946 70.8002 124.946 70.8002L125.746 70.8502L123.546 92.0002H96.4961V91.3002C96.4961 91.3002 98.7961 91.2502 99.4461 91.0502C100.596 90.7502 100.996 90.0502 101.146 89.1002C101.296 88.4502 101.296 87.2502 101.296 86.3002V62.7002C101.296 61.7502 101.296 60.5502 101.146 59.9002C100.996 58.9502 100.596 58.2502 99.4461 57.9502C98.7961 57.7502 96.4961 57.7002 96.4961 57.7002V57.0002H120.546L127.446 71.4502L126.746 71.8002L124.646 67.4002C122.096 62.2002 118.696 58.3002 113.796 57.9502C112.746 57.8502 111.546 57.8002 110.446 57.8002H105.496ZM140.413 92.0002H124.963V91.3002C124.963 91.3002 127.263 91.2502 127.913 91.0502C129.063 90.7502 129.463 90.0502 129.613 89.1002C129.763 88.4502 129.763 86.7502 129.763 85.4502V62.7002C129.763 61.7502 129.763 60.5502 129.613 59.9002C129.463 58.9502 129.063 58.2502 127.913 57.9502C127.263 57.7502 124.963 57.7002 124.963 57.7002V57.0002H135.313C148.513 57.0002 153.263 63.5502 153.263 69.9502C153.263 76.8002 148.213 82.9502 138.213 82.9502H136.613V82.1502H138.213C145.313 82.1502 149.063 75.6502 149.063 69.9002C149.063 61.4002 142.663 57.8002 135.313 57.8002H133.963V88.8502L133.913 90.8502L140.413 91.3502V92.0002ZM158.571 86.3002V62.7002C158.571 61.7502 158.571 60.5502 158.421 59.9002C158.271 58.9502 157.871 58.2502 156.721 57.9502C156.071 57.7502 153.771 57.7002 153.771 57.7002V57.0002H167.771V57.7002L162.771 58.1002V71.8502L175.271 58.0002L171.121 57.7002V57.0002H182.371V57.7002C179.921 57.7502 177.521 58.0502 175.471 59.5502C174.321 60.4002 171.671 63.1502 171.671 63.1502L171.821 63.0002L170.921 64.0002L177.671 82.3002C178.471 84.4002 179.921 88.1502 180.771 89.2002C181.521 90.1502 182.371 90.7002 183.371 90.9502C184.521 91.2502 186.421 91.3002 186.421 91.3002V92.0002H172.671V91.3002L176.421 91.0002L167.721 67.5002L162.771 73.0002V90.9002L167.771 91.3002V92.0002H153.771V91.3002C153.771 91.3002 156.071 91.2502 156.721 91.0502C157.871 90.7502 158.271 90.0502 158.421 89.1002C158.571 88.4502 158.571 87.2502 158.571 86.3002ZM182.91 74.4502C182.91 63.5502 188.56 56.6002 196.66 56.6002C207.06 56.6002 213.31 65.8502 213.31 74.4502C213.31 85.0002 207.11 92.4002 198.96 92.4002C188.86 92.4002 182.91 82.9002 182.91 74.4502ZM210.56 79.6502C210.56 70.6002 204.66 58.7002 194.06 58.7002C188.11 58.7002 185.71 63.1502 185.71 68.7002C185.71 78.4002 191.51 90.3002 201.41 90.3002C207.76 90.3002 210.56 85.4502 210.56 79.6502ZM218.63 86.3002V63.5502C218.63 62.2502 218.63 60.5502 218.48 59.9002C218.33 58.9502 217.93 58.2502 216.78 57.9502C216.13 57.7502 213.83 57.7002 213.83 57.7002V57.0002H223.43L232.38 81.9502L234.33 58.1002L229.33 57.7002V57.0002H247.18V57.7002C247.18 57.7002 243.68 57.8002 242.53 58.0002C240.83 58.3502 240.83 59.5502 240.88 60.5002C241.08 62.5002 242.43 66.5002 242.48 66.7002L251.93 92.0002H242.83V91.3002L247.03 90.9502L235.13 58.9502L232.33 92.0002H231.53L219.43 58.2502V90.9002L224.58 91.3002V92.0002H213.83V91.3002C213.83 91.3002 216.13 91.2502 216.78 91.0502C217.93 90.7502 218.33 90.0502 218.48 89.1002C218.63 88.4502 218.63 87.2502 218.63 86.3002ZM256.228 86.3002V63.5502C256.228 62.2502 256.228 60.5502 256.078 59.9002C255.928 58.9502 255.528 58.2502 254.378 57.9502C253.728 57.7502 251.428 57.7002 251.428 57.7002V57.0002H261.028L269.978 81.9502L271.928 58.1002L266.928 57.7002V57.0002H284.778V57.7002C284.778 57.7002 281.278 57.8002 280.128 58.0002C278.428 58.3502 278.428 59.5502 278.478 60.5002C278.678 62.5002 280.028 66.5002 280.078 66.7002L289.528 92.0002H280.428V91.3002L284.628 90.9502L272.728 58.9502L269.928 92.0002H269.128L257.028 58.2502V90.9002L262.178 91.3002V92.0002H251.428V91.3002C251.428 91.3002 253.728 91.2502 254.378 91.0502C255.528 90.7502 255.928 90.0502 256.078 89.1002C256.228 88.4502 256.228 87.2502 256.228 86.3002Z"
+                                fill="white" />
+                        </g>
+                        <defs>
+                            <clipPath id="clip0_830_791">
+                                <rect width="290" height="150" fill="white" />
+                            </clipPath>
+                        </defs>
+                    </svg>
+
+
                 </h1>
-                <p class="main-screen__descr">Здесь нет границ – только дорога к вашим целям</p>
-                <div class="main-screen__block">
+                <p class="main-screen__descr" data-aos="zoom-in-up" data-aos-delay="400">Здесь нет границ – только
+                    дорога к
+                    вашим целям</p>
+                <div class="main-screen__block" data-aos="zoom-in" data-aos-delay="600">
                     <div class="block-text">
                         <span>28 октября</span>
                         <p>
@@ -64,17 +102,17 @@
         <section class="second-section" id="second-section">
             <div class="container">
                 <div class="title-wrapper">
-                    <h2 class="section-title">
+                    <h2 class="section-title" data-aos="zoom-in">
                         Кому конференция будет<br> полезной и интересной?
                     </h2>
-                    <div class="slider-btns">
+                    <div class="slider-btns" data-aos="zoom-in">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="second-section-slider swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide card-slide">
+                        <div class="swiper-slide card-slide" data-aos="fade-up" data-aos-delay="0">
                             <div class="card-slide__image">
                                 <img src="./img/second-section-slider/slide-1.png" alt="">
                             </div>
@@ -83,7 +121,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide card-slide">
+                        <div class="swiper-slide card-slide" data-aos="fade-up" data-aos-delay="100">
                             <div class="card-slide__image">
                                 <img src="./img/second-section-slider/slide-2.png" alt="">
                             </div>
@@ -91,38 +129,39 @@
                                 корпоративных коммуникаций</div>
                         </div>
 
-                        <div class="swiper-slide card-slide">
+                        <div class="swiper-slide card-slide" data-aos="fade-up" data-aos-delay="200">
                             <div class="card-slide__image">
                                 <img src="./img/second-section-slider/slide-3.png" alt="">
                             </div>
                             <div class="card-slide__text">Руководителям и сотрудникам PR департаментов</div>
                         </div>
 
-                        <div class="swiper-slide card-slide">
+                        <div class="swiper-slide card-slide" data-aos="fade-up" data-aos-delay="300">
                             <div class="card-slide__image">
                                 <img src="./img/second-section-slider/slide-4.png" alt="">
                             </div>
                             <div class="card-slide__text">HRD и сотрудникам HR-подразделений</div>
                         </div>
 
-                        <div class="swiper-slide card-slide">
+                        <div class="swiper-slide card-slide" data-aos="fade-up" data-aos-delay="400">
                             <div class="card-slide__image">
                                 <img src="./img/second-section-slider/slide-5.png" alt="">
                             </div>
                             <div class="card-slide__text">Лидерам и редакторам корпоративных и бренд-медиа</div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="third-section" id="third-section">
             <div class="container">
-                <h2 class="section-title">
+                <h2 class="section-title" data-aos="zoom-in">
                     Площадки конференции
                 </h2>
                 <div class="third-section__content">
                     <div class="third-section-cards">
-                        <div class="third-section-card">
+                        <div class="third-section-card" data-aos="zoom-in-up">
                             <div class="card__num">1</div>
                             <div class="card__w">
                                 <div class="card__name">Кейсы и тренды</div>
@@ -130,7 +169,7 @@
                             </div>
                         </div>
 
-                        <div class="third-section-card">
+                        <div class="third-section-card" data-aos="zoom-in-up">
                             <div class="card__num">2</div>
                             <div class="card__w">
                                 <div class="card__name">Развитие и карьера</div>
@@ -138,7 +177,7 @@
                             </div>
                         </div>
 
-                        <div class="third-section-card">
+                        <div class="third-section-card" data-aos="zoom-in-up">
                             <div class="card__num">3</div>
                             <div class="card__w">
                                 <div class="card__name">Продюсируемый<br> нетворкинг</div>
@@ -146,7 +185,7 @@
                             </div>
                         </div>
 
-                        <div class="third-section-card">
+                        <div class="third-section-card" data-aos="zoom-in-up">
                             <div class="card__num">4</div>
                             <div class="card__w">
                                 <div class="card__name">Мышление<br> и структура</div>
@@ -154,33 +193,37 @@
                             </div>
                         </div>
                     </div>
-                    <a href="#" class="ticket-btn">Перейти к билетам</a>
+                    <div data-aos="zoom-in-up"> <a href="#" class="ticket-btn">Перейти к билетам</a></div>
                 </div>
             </div>
         </section>
         <section class="four-section" id="four-section">
             <div class="container">
-                <h2 class="section-title">5 ключевых тем конференции</h2>
+                <h2 class="section-title" data-aos="zoom-in">5 ключевых тем конференции</h2>
                 <div class="four-section__list">
-                    <div class="four-section__list-item">Геобренд работодателя, национальная идентичность
+                    <div class="four-section__list-item" data-aos="zoom-in-up">Геобренд работодателя, национальная
+                        идентичность
                         и региональная специфика</div>
-                    <div class="four-section__list-item">Изменение трудовых отношений
+                    <div class="four-section__list-item" data-aos="zoom-in-up">Изменение трудовых отношений
                         и мотивационных моделей соискателя</div>
-                    <div class="four-section__list-item">Культурная трансформация и новые фреймы работы
+                    <div class="four-section__list-item" data-aos="zoom-in-up">Культурная трансформация и новые фреймы
+                        работы
                         с командой</div>
-                    <div class="four-section__list-item">Сообщества, амбассадоры, ИИ-экосистемы и другие инструменты на
+                    <div class="four-section__list-item" data-aos="zoom-in-up">Сообщества, амбассадоры, ИИ-экосистемы и
+                        другие инструменты на
                         пике популярности</div>
-                    <div class="four-section__list-item">Личный бренд и ролевые модели в контексте организации</div>
+                    <div class="four-section__list-item" data-aos="zoom-in-up">Личный бренд и ролевые модели в контексте
+                        организации</div>
                 </div>
             </div>
         </section>
         <section class="five-section" id="five-section">
             <div class="container">
-                <h2 class="section-title">
+                <h2 class="section-title" data-aos="zoom-in">
                     Что вы получите?
                 </h2>
                 <div class="five-section__list">
-                    <div class="list-item">
+                    <div class="list-item" data-aos="zoom-in-up">
                         <div class="list-item__content">
                             <div class="list-item__name">Эксклюзивные кейсы</div>
                             <div class="list-item__text">
@@ -192,7 +235,7 @@
                         </div>
                         <div class="list-item_ico" style="background-image: url(./img/cards-bg/card-bg-1.png);"></div>
                     </div>
-                    <div class="list-item">
+                    <div class="list-item" data-aos="zoom-in-up">
                         <div class="list-item__content">
                             <div class="list-item__name">Тренды от первых лиц</div>
                             <div class="list-item__text">
@@ -204,7 +247,7 @@
                         <div class="list-item_ico" style="background-image: url(./img/cards-bg/card-bg-2.png);"></div>
 
                     </div>
-                    <div class="list-item">
+                    <div class="list-item" data-aos="zoom-in-up">
                         <div class="list-item__content">
                             <div class="list-item__name">Сообщество единомышленников</div>
                             <div class="list-item__text">
@@ -215,7 +258,7 @@
                         </div>
                         <div class="list-item_ico" style="background-image: url(./img/cards-bg/card-bg-3.png);"></div>
                     </div>
-                    <div class="list-item">
+                    <div class="list-item" data-aos="zoom-in-up">
                         <div class="list-item__content">
                             <div class="list-item__name">Вдохновение и новые идеи</div>
                             <div class="list-item__text">
@@ -232,17 +275,17 @@
         <section class="six-section" id="six-section">
             <div class="container">
                 <div class="title-wrapper">
-                    <h2 class="section-title">
+                    <h2 class="section-title" data-aos="zoom-in">
                         Спикеры страны <span>InterComm</span>
                     </h2>
-                    <div class="slider-btns">
+                    <div class="slider-btns" data-aos="zoom-in">
                         <div class="swiper-button-prev"></div>
                         <div class="swiper-button-next"></div>
                     </div>
                 </div>
                 <div class="six-section-slider swiper">
                     <div class="swiper-wrapper">
-                        <div class="swiper-slide speaker-slide">
+                        <div class="swiper-slide speaker-slide" data-aos="fade-up" data-aos-delay="0">
                             <div class="speaker-slide__image">
                                 <img src="./img/speakers/speaker-1.png" alt="">
                             </div>
@@ -253,7 +296,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide speaker-slide">
+                        <div class="swiper-slide speaker-slide" data-aos="fade-up" data-aos-delay="100">
                             <div class="speaker-slide__image">
                                 <img src="./img/speakers/speaker-2.png" alt="">
                             </div>
@@ -263,7 +306,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide speaker-slide">
+                        <div class="swiper-slide speaker-slide" data-aos="fade-up" data-aos-delay="200">
                             <div class="speaker-slide__image">
                                 <img src="./img/speakers/speaker-3.png" alt="">
                             </div>
@@ -273,7 +316,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide speaker-slide">
+                        <div class="swiper-slide speaker-slide" data-aos="fade-up" data-aos-delay="300">
                             <div class="speaker-slide__image">
                                 <img src="./img/speakers/speaker-4.png" alt="">
                             </div>
@@ -283,7 +326,7 @@
                             </div>
                         </div>
 
-                        <div class="swiper-slide speaker-slide">
+                        <div class="swiper-slide speaker-slide" data-aos="fade-up" data-aos-delay="400">
                             <div class="speaker-slide__image">
                                 <img src="./img/speakers/speaker-5.png" alt="">
                             </div>
@@ -294,13 +337,14 @@
                             </div>
                         </div>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="seven-section" id="seven-section">
             <div class="container">
-                <h2 class="section-title">Вспомним как это было</h2>
-                <div class="seven-section__video">
+                <h2 class="section-title" data-aos="zoom-in">Вспомним как это было</h2>
+                <div class="seven-section__video" data-aos="zoom-in-up">
                     <div class="seven-section__video-wrapper">
                         <video controls src="./files/video-ex.mp4" poster="./img/video-poster.jpg"></video>
                         <div class="custom-play-btn">
@@ -322,9 +366,9 @@
         </section>
         <section class="eight-section" id="eight-section">
             <div class="container">
-                <h2 class="section-title">Билеты</h2>
+                <h2 class="section-title" data-aos="zoom-in">Билеты</h2>
                 <div class="tickets">
-                    <div class="ticket">
+                    <div class="ticket" data-aos="fade-up" data-aos-delay="0">
                         <div class="ticket__date">С 01 июня до 31 июля</div>
                         <div class="ticket__price">47 990 ₽</div>
                         <div class="ticket__footer">
@@ -333,7 +377,7 @@
                         </div>
                     </div>
 
-                    <div class="ticket">
+                    <div class="ticket" data-aos="fade-up" data-aos-delay="300">
                         <div class="ticket__date">С 1 августа до 28 октября</div>
                         <div class="ticket__price">59 990 ₽</div>
                         <div class="ticket__footer">
@@ -346,9 +390,9 @@
         </section>
         <section class="nine-section" id="nine-section">
             <div class="container">
-                <h2 class="section-title">Отвечаем на самые часто<br> задаваемые вопросы</h2>
+                <h2 class="section-title" data-aos="zoom-in">Отвечаем на самые часто<br> задаваемые вопросы</h2>
                 <div class="faq">
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Хочу поставить стенд на ЭКСПО, с кем обсудить?</div>
                         <div class="faq__body">
                             Выживание бизнесов - с одной стороны. Сокращение и увольнение персонала, страх, стресс,
@@ -357,31 +401,31 @@
                         </div>
                     </div>
 
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Что дает участие в конференции?</div>
                         <div class="faq__body">Далеко-далеко за словесными горами в стране гласных и согласных живут
                             рыбные тексты.</div>
                     </div>
 
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Какие темы будут освещаться?</div>
                         <div class="faq__body">Далеко-далеко за словесными горами в стране гласных и согласных живут
                             рыбные тексты.</div>
                     </div>
 
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Есть ли дресс-код?</div>
                         <div class="faq__body">Далеко-далеко за словесными горами в стране гласных и согласных живут
                             рыбные тексты.</div>
                     </div>
 
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Есть ли парковка для участников?</div>
                         <div class="faq__body">Далеко-далеко за словесными горами в стране гласных и согласных живут
                             рыбные тексты.</div>
                     </div>
 
-                    <div class="faq__item">
+                    <div class="faq__item" data-aos="fade-up">
                         <div class="faq__head">Как стать партнером конференции?</div>
                         <div class="faq__body">Далеко-далеко за словесными горами в стране гласных и согласных живут
                             рыбные тексты.</div>
@@ -391,10 +435,10 @@
         </section>
         <section class="ten-section" id="ten-section">
             <div class="container">
-                <h2 class="section-title">Партнеры</h2>
+                <h2 class="section-title" data-aos="zoom-in">Партнеры</h2>
                 <div class="ten-section-slider swiper">
                     <div class="swiper-wrapper">
-                        <a href="#" class="swiper-slide partner">
+                        <a href="#" class="swiper-slide partner" data-aos="fade-up" data-aos-delay="0">
                             <div class="partner__logo">
                                 <img src="./img/partners/partner-1.png" alt="">
                             </div>
@@ -402,7 +446,7 @@
                             <div class="partner__descr">Генеральный информационный партнёр</div>
                         </a>
 
-                        <a href="#" class="swiper-slide partner">
+                        <a href="#" class="swiper-slide partner" data-aos="fade-up" data-aos-delay="100">
                             <div class="partner__logo">
                                 <img src="./img/partners/partner-2.png" alt="">
                             </div>
@@ -410,7 +454,7 @@
                             <div class="partner__descr">Генеральный партнер</div>
                         </a>
 
-                        <a href="#" class="swiper-slide partner">
+                        <a href="#" class="swiper-slide partner" data-aos="fade-up" data-aos-delay="200">
                             <div class="partner__logo">
                                 <img src="./img/partners/partner-3.png" alt="">
                             </div>
@@ -418,7 +462,7 @@
                             <div class="partner__descr">Партнер по HR-цифровизации</div>
                         </a>
 
-                        <a href="#" class="swiper-slide partner">
+                        <a href="#" class="swiper-slide partner" data-aos="fade-up" data-aos-delay="300">
                             <div class="partner__logo">
                                 <img src="./img/partners/partner-4.png" alt="">
                             </div>
@@ -426,7 +470,7 @@
                             <div class="partner__descr">Стратегический партнёр</div>
                         </a>
 
-                        <a href="#" class="swiper-slide partner">
+                        <a href="#" class="swiper-slide partner" data-aos="fade-up" data-aos-delay="400">
                             <div class="partner__logo">
                                 <img src="./img/partners/partner-5.png" alt="">
                             </div>
@@ -434,14 +478,15 @@
                             <div class="partner__descr">Стратегический партнер</div>
                         </a>
                     </div>
+                    <div class="swiper-pagination"></div>
                 </div>
             </div>
         </section>
         <section class="eleven-section" id="eleven-section">
             <div class="container">
-                <h2 class="section-title">Контакты</h2>
+                <h2 class="section-title" data-aos="zoom-in">Контакты</h2>
                 <div class="contacts">
-                    <div class="contacts__coll">
+                    <div class="contacts__coll" data-aos="fade-up" data-aos-delay="0">
                         <div class="contacts__title">
                             Партнёрское и спонсорское<br> участие в проекте
                         </div>
@@ -457,7 +502,7 @@
                         </div>
                     </div>
 
-                    <div class="contacts__coll">
+                    <div class="contacts__coll" data-aos="fade-up" data-aos-delay="100">
                         <div class="contacts__title">Участие в конференции</div>
                         <div class="contact-block">
                             <div class="contact-block__name">Исполнительный директор</div>
@@ -476,7 +521,7 @@
                         </div>
                     </div>
 
-                    <div class="contacts__coll">
+                    <div class="contacts__coll" data-aos="fade-up" data-aos-delay="200">
                         <div class="contacts__title">Информационное сотрудничество:</div>
                         <div class="contact-block">
                             <div class="contact-block__name">Должность:</div>
@@ -489,7 +534,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="https://yandex.kz/maps/-/CHXqACpC" target="_blank" class="map-block">
+                <a href="https://yandex.kz/maps/-/CHXqACpC" target="_blank" class="map-block" data-aos="fade-in">
                     <div class="map-block__wrapper">
                         <div class="map-block__plate">
                             <div class="map-block__plate-inner">
@@ -513,84 +558,106 @@
                 </a>
                 <div class="socials-list__wrapper">
                     <div class="socials-list">
-                        <a href="#" target="_blank" name="wa" class="social-item">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_52_745)">
-                                    <path
-                                        d="M0 42L2.96848 31.2205C1.13324 28.0566 0.170487 24.4734 0.180516 20.8104C0.180516 9.33222 9.56733 0 21.0902 0C26.6862 0 31.9412 2.16587 35.8825 6.09838C39.8338 10.0309 42.01 15.2609 42 20.8203C42 32.2985 32.6132 41.6307 21.0802 41.6307H21.0702C17.5702 41.6307 14.1304 40.7524 11.0716 39.0955L0 42ZM11.6031 35.3327L12.2349 35.712C14.9026 37.289 17.9613 38.1174 21.0802 38.1274H21.0902C30.6676 38.1274 38.4699 30.3722 38.4699 20.8303C38.4699 16.2091 36.6647 11.8674 33.3854 8.59363C30.106 5.31987 25.7335 3.52329 21.0902 3.52329C11.5129 3.51331 3.7106 11.2685 3.7106 20.8104C3.7106 24.0741 4.62321 27.2581 6.36819 30.0128L6.77936 30.6716L5.02435 37.0494L11.6031 35.3327Z"
-                                        fill="url(#paint0_linear_52_745)" />
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M15.8651 12.1065C15.474 11.2382 15.0628 11.2182 14.6918 11.2082C14.3909 11.1982 14.0399 11.1982 13.6889 11.1982C13.3379 11.1982 12.7763 11.328 12.2949 11.847C11.8136 12.366 10.4697 13.6236 10.4697 16.1887C10.4697 18.7439 12.3451 21.2192 12.6058 21.5685C12.8666 21.9178 16.2262 27.3375 21.5313 29.4235C25.9439 31.1602 26.8465 30.8109 27.7992 30.721C28.7519 30.6312 30.888 29.4634 31.3293 28.2458C31.7605 27.0281 31.7605 25.9901 31.6302 25.7705C31.4998 25.5509 31.1488 25.4211 30.6273 25.1616C30.1058 24.9021 27.5385 23.6445 27.0571 23.4649C26.5757 23.2952 26.2247 23.2054 25.8838 23.7244C25.5327 24.2434 24.5299 25.4112 24.229 25.7605C23.9282 26.1098 23.6173 26.1498 23.0958 25.8903C22.5743 25.6307 20.8895 25.0818 18.8938 23.3052C17.3393 21.9278 16.2863 20.2211 15.9855 19.702C15.6846 19.183 15.9554 18.9036 16.2161 18.6441C16.4468 18.4145 16.7376 18.0352 16.9984 17.7358C17.2591 17.4364 17.3494 17.2168 17.5199 16.8674C17.6903 16.5181 17.6101 16.2187 17.4797 15.9592C17.3494 15.7096 16.3265 13.1346 15.8651 12.1065Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <linearGradient id="paint0_linear_52_745" x1="21.0041" y1="41.996" x2="21.0041"
-                                        y2="0" gradientUnits="userSpaceOnUse">
-                                        <stop stop-color="#F9F9F9" />
-                                        <stop offset="1" stop-color="white" />
-                                    </linearGradient>
-                                    <clipPath id="clip0_52_745">
-                                        <rect width="42" height="42" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-
+                        <a href="https://t.me/inter_comm" target="_blank" name="tg" class="social-item"
+                            data-aos="fade-up" data-aos-delay="100">
+                            <div class="social-item__ico">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_52_755)">
+                                        <path
+                                            d="M21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0ZM29.5859 12.6416C28.7961 12.6556 27.5842 13.0775 21.7529 15.5029C19.7104 16.3525 15.6278 18.1111 9.50586 20.7783C8.5118 21.1736 7.99077 21.5603 7.94336 21.9385C7.85273 22.6642 8.898 22.89 10.2129 23.3174C11.2851 23.6659 12.7277 24.0736 13.4775 24.0898C14.1576 24.1044 14.9169 23.8244 15.7549 23.249C21.4719 19.3899 24.4243 17.4384 24.6123 17.3945C24.743 17.3649 24.9241 17.3275 25.0469 17.4365C25.1696 17.5456 25.1585 17.752 25.1455 17.8076C25.0415 18.2509 19.6691 23.1365 19.3584 23.459C18.1768 24.6862 16.8331 25.4375 18.9062 26.8037C20.7003 27.986 21.7445 28.7406 23.5928 29.9521C24.7739 30.7264 25.7004 31.6444 26.9199 31.5322C27.4809 31.4804 28.0602 30.9522 28.3545 29.3789C29.0502 25.6597 30.4174 17.6018 30.7334 14.2812C30.7611 13.9906 30.7272 13.6188 30.6992 13.4551C30.6712 13.2916 30.6119 13.0581 30.3994 12.8857C30.1478 12.6818 29.7596 12.6385 29.5859 12.6416Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_52_755">
+                                            <rect width="42" height="42" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="social-item__name">Канал</div>
                         </a>
-                        <a href="#" target="_blank" name="ok" class="social-item">
-                            <svg width="42" height="41" viewBox="0 0 42 41" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_52_748)">
-                                    <path
-                                        d="M35.7324 0.210938C39.0748 0.210938 41.7842 2.86998 41.7842 6.14941V34.8516C41.7842 38.1311 39.0748 40.79 35.7324 40.79H6.26758C2.92524 40.79 0.21582 38.1311 0.21582 34.8516V6.14941C0.21582 2.86991 2.92535 0.210994 6.26758 0.210938H35.7324ZM28.876 21.8955C28.168 21.0292 26.8783 20.8904 25.9951 21.585C25.9645 21.6088 24.038 23.0506 20.875 23.0527C17.7054 23.0506 15.7366 21.6027 15.7139 21.585C14.8308 20.8904 13.541 21.0293 12.833 21.8955C12.1251 22.7619 12.2676 24.028 13.1504 24.7227C13.2528 24.8031 15.1345 26.2381 18.2314 26.8262L13.9082 31.2588C13.1228 32.0582 13.1463 33.3317 13.9609 34.1025C14.3586 34.4787 14.8717 34.665 15.3838 34.665C15.9206 34.665 16.4573 34.459 16.8594 34.0498L20.875 29.8525L25.2969 34.0771C26.098 34.8619 27.3957 34.861 28.1953 34.0752C28.9947 33.2893 28.9932 32.016 28.1924 31.2314L23.6387 26.8027C26.6547 26.1998 28.4628 24.7988 28.5596 24.7227C29.4424 24.0279 29.584 22.7619 28.876 21.8955ZM20.9766 6.12793C16.8141 6.12805 13.4404 9.43935 13.4404 13.5234C13.4406 17.6075 16.8143 20.9188 20.9766 20.9189C25.1389 20.9189 28.5135 17.6075 28.5137 13.5234C28.5137 9.43931 25.139 6.12799 20.9766 6.12793ZM20.9766 10.4658C22.6972 10.4659 24.0928 11.8352 24.0928 13.5234C24.0926 15.2116 22.6971 16.58 20.9766 16.5801C19.2561 16.58 17.8615 15.2115 17.8613 13.5234C17.8613 11.8352 19.256 10.4659 20.9766 10.4658Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_52_748">
-                                        <rect width="42" height="41" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-
+                        <a href="https://t.me/comaotvnutricoma" target="_blank" name="tg" class="social-item"
+                            data-aos="fade-up" data-aos-delay="200">
+                            <div class="social-item__ico">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_52_755)">
+                                        <path
+                                            d="M21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0ZM29.5859 12.6416C28.7961 12.6556 27.5842 13.0775 21.7529 15.5029C19.7104 16.3525 15.6278 18.1111 9.50586 20.7783C8.5118 21.1736 7.99077 21.5603 7.94336 21.9385C7.85273 22.6642 8.898 22.89 10.2129 23.3174C11.2851 23.6659 12.7277 24.0736 13.4775 24.0898C14.1576 24.1044 14.9169 23.8244 15.7549 23.249C21.4719 19.3899 24.4243 17.4384 24.6123 17.3945C24.743 17.3649 24.9241 17.3275 25.0469 17.4365C25.1696 17.5456 25.1585 17.752 25.1455 17.8076C25.0415 18.2509 19.6691 23.1365 19.3584 23.459C18.1768 24.6862 16.8331 25.4375 18.9062 26.8037C20.7003 27.986 21.7445 28.7406 23.5928 29.9521C24.7739 30.7264 25.7004 31.6444 26.9199 31.5322C27.4809 31.4804 28.0602 30.9522 28.3545 29.3789C29.0502 25.6597 30.4174 17.6018 30.7334 14.2812C30.7611 13.9906 30.7272 13.6188 30.6992 13.4551C30.6712 13.2916 30.6119 13.0581 30.3994 12.8857C30.1478 12.6818 29.7596 12.6385 29.5859 12.6416Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_52_755">
+                                            <rect width="42" height="42" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="social-item__name">Чат</div>
                         </a>
-                        <a href="#" target="_blank" name="tg" class="social-item">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_52_755)">
+                        <a href="http://vnutricom.ru/" target="_blank" name="site" class="social-item"
+                            data-aos="fade-up" data-aos-delay="300">
+                            <div class="social-item__ico">
+                                <svg width="43" height="42" viewBox="0 0 43 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
                                     <path
-                                        d="M21 0C32.598 0 42 9.40202 42 21C42 32.598 32.598 42 21 42C9.40202 42 0 32.598 0 21C0 9.40202 9.40202 0 21 0ZM29.5859 12.6416C28.7961 12.6556 27.5842 13.0775 21.7529 15.5029C19.7104 16.3525 15.6278 18.1111 9.50586 20.7783C8.5118 21.1736 7.99077 21.5603 7.94336 21.9385C7.85273 22.6642 8.898 22.89 10.2129 23.3174C11.2851 23.6659 12.7277 24.0736 13.4775 24.0898C14.1576 24.1044 14.9169 23.8244 15.7549 23.249C21.4719 19.3899 24.4243 17.4384 24.6123 17.3945C24.743 17.3649 24.9241 17.3275 25.0469 17.4365C25.1696 17.5456 25.1585 17.752 25.1455 17.8076C25.0415 18.2509 19.6691 23.1365 19.3584 23.459C18.1768 24.6862 16.8331 25.4375 18.9062 26.8037C20.7003 27.986 21.7445 28.7406 23.5928 29.9521C24.7739 30.7264 25.7004 31.6444 26.9199 31.5322C27.4809 31.4804 28.0602 30.9522 28.3545 29.3789C29.0502 25.6597 30.4174 17.6018 30.7334 14.2812C30.7611 13.9906 30.7272 13.6188 30.6992 13.4551C30.6712 13.2916 30.6119 13.0581 30.3994 12.8857C30.1478 12.6818 29.7596 12.6385 29.5859 12.6416Z"
+                                        d="M27.5 14.0316C22.2137 11.9326 16.011 13.0521 11.7819 17.25C6.07269 22.9172 6.07269 32.0828 11.7819 37.75C16.011 41.9479 22.2137 43.0674 27.5 40.9684V34.2517C26.4427 34.7415 25.315 35.0213 24.1167 35.0213C19.8877 35.0213 16.5044 31.663 16.5044 27.465C16.5044 23.2671 19.8877 19.9087 24.1167 19.9087C25.315 19.9087 26.5132 20.1886 27.5 20.6783V14.0316Z"
                                         fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_52_755">
-                                        <rect width="42" height="42" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                                    <path
+                                        d="M25.0584 8.55482C26.9805 6.62791 26.9805 3.43854 25.0584 1.44518C23.1363 -0.481728 19.9549 -0.481728 17.9665 1.44518C15.9782 3.37209 16.0444 6.56146 17.9665 8.55482C19.9549 10.4817 23.1363 10.4817 25.0584 8.55482Z"
+                                        fill="white" />
+                                </svg>
 
+                            </div>
+                            <div class="social-item__name">Наш сайт</div>
                         </a>
-                        <a href="#" target="_blank" name="vk" class="social-item">
-                            <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_52_759)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M2.95236 2.95236C0 5.90473 0 10.6565 0 20.16V21.84C0 31.3435 0 36.0952 2.95236 39.0477C5.90473 42 10.6565 42 20.16 42H21.84C31.3435 42 36.0952 42 39.0477 39.0477C42 36.0952 42 31.3435 42 21.84V20.16C42 10.6565 42 5.90473 39.0477 2.95236C36.0952 0 31.3435 0 21.84 0H20.16C10.6565 0 5.90473 0 2.95236 2.95236ZM7.0876 12.7751C7.3151 23.6951 12.7751 30.2576 22.3476 30.2576H22.8902V24.0101C26.4077 24.3601 29.0675 26.9326 30.135 30.2576H35.1051C33.7401 25.2876 30.1524 22.5401 27.9124 21.4901C30.1524 20.1951 33.3024 17.0451 34.0549 12.7751H29.5398C28.5598 16.2401 25.6552 19.3901 22.8902 19.6876V12.7751H18.375V24.8851C15.575 24.1851 12.0401 20.7901 11.8826 12.7751H7.0876Z"
-                                        fill="white" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_52_759">
-                                        <rect width="42" height="42" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
+                        <a href="https://vk.com/intercomm_media" target="_blank" name="vk" class="social-item"
+                            data-aos="fade-up" data-aos-delay="400">
+                            <div class="social-item__ico">
+                                <svg width="42" height="42" viewBox="0 0 42 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_52_759)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.95236 2.95236C0 5.90473 0 10.6565 0 20.16V21.84C0 31.3435 0 36.0952 2.95236 39.0477C5.90473 42 10.6565 42 20.16 42H21.84C31.3435 42 36.0952 42 39.0477 39.0477C42 36.0952 42 31.3435 42 21.84V20.16C42 10.6565 42 5.90473 39.0477 2.95236C36.0952 0 31.3435 0 21.84 0H20.16C10.6565 0 5.90473 0 2.95236 2.95236ZM7.0876 12.7751C7.3151 23.6951 12.7751 30.2576 22.3476 30.2576H22.8902V24.0101C26.4077 24.3601 29.0675 26.9326 30.135 30.2576H35.1051C33.7401 25.2876 30.1524 22.5401 27.9124 21.4901C30.1524 20.1951 33.3024 17.0451 34.0549 12.7751H29.5398C28.5598 16.2401 25.6552 19.3901 22.8902 19.6876V12.7751H18.375V24.8851C15.575 24.1851 12.0401 20.7901 11.8826 12.7751H7.0876Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_52_759">
+                                            <rect width="42" height="42" fill="white" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                            </div>
+                            <div class="social-item__name">Сообщество</div>
+                        </a>
+                        <a href="https://rutube.ru/channel/23922865/" target="_blank" name="rutube" class="social-item"
+                            data-aos="fade-up" data-aos-delay="500">
+                            <div class="social-item__ico">
+                                <svg width="43" height="42" viewBox="0 0 43 42" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g clip-path="url(#clip0_561_2911)">
+                                        <path
+                                            d="M34.7609 0C39.0351 1.74087e-05 42.5 3.47213 42.5 7.75519V34.2448C42.5 38.5279 39.0351 42 34.7609 42H8.23913C3.96493 42 0.5 38.5279 0.5 34.2448V7.75519C0.5 3.47212 3.96493 0 8.23913 0H34.7609ZM7.57694 32.7346H13.0552V25.5893H23.608L28.4465 32.7346H34.5335L29.357 25.5621C32.6188 25.281 33.9248 22.8346 33.9248 19.2719V16.8756C33.9248 12.8238 31.6639 10.776 27.9248 10.776H7.57694V32.7346ZM27.1422 15.6557C27.8625 15.6557 28.4465 16.2409 28.4465 16.9628V19.4026C28.4465 20.1245 27.8625 20.7097 27.1422 20.7097H13.0552V15.6557H27.1422ZM35.7509 5.37356C34.166 5.37356 32.8813 6.66097 32.8813 8.24908C32.8813 9.83718 34.166 11.1246 35.7509 11.1246C37.3357 11.1246 38.6204 9.83718 38.6204 8.24908C38.6204 6.66097 37.3357 5.37356 35.7509 5.37356Z"
+                                            fill="white" />
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_561_2911">
+                                            <rect width="42" height="42" fill="white" transform="translate(0.5)" />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </div>
+                            <div class="social-item__name">Rutube</div>
                         </a>
                     </div>
-                    <a href="" class="btn mob-btn">Купить билет</a>
+                    <div data-aos="fade-up"> <a href="" class="btn mob-btn">Купить билет</a></div>
                 </div>
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" data-aos="fade-in">
         <div class="container">
             <div class="footer__inner">
                 <div class="footer__coll" style="display: block;">
@@ -650,9 +717,129 @@
             </div>
         </div>
     </footer>
+    <div class="form-modal show">
+        <form class="form-modal__content">
+            <div class="form-modal__title">Оставьте свои контакты,<br> наш менеджер с Вами свяжется</div>
+            <label class="form-modal__field">
+                <span>Имя</span>
+                <input type="text" class="form-input" name="name-input" placeholder="Ваше имя">
+                <div class="error-message">Пожалуйста, укажите своё имя</div>
+            </label>
+
+            <label class="form-modal__field">
+                <span>Телефон</span>
+                <input type="text" class="form-input" name="phone-input" placeholder="+7 (___) ___-__-__">
+                <div class="error-message">Пожалуйста, укажите корректный номер телефона</div>
+            </label>
+            <label class="agree-label">
+                <input type="checkbox" name="agree" class="agree-cb" checked>
+                <p class="agree-label__text">Я согласен на <a href="#" target="_blank">обработку персональных данных</a>
+                </p>
+            </label>
+            <button type="submit" class="btn">Подать заявку</button>
+
+            <div class="form-modal__res">
+                <img src="./img/form-ico.svg" alt="">
+                <div class="form-modal__title">
+                    Спасибо!<br>
+                    Мы свяжемся с вами<br>
+                    в ближайшее время
+                </div>
+                <button type="button" class="btn">Ок</button>
+            </div>
+            <div class="form-modal__loader">
+                <span class="loader"></span>
+            </div>
+        </form>
+    </div>
+    <script src="./js/imask.min.js"></script>
     <script src="./js/swiper-bundle.min.js"></script>
     <script src="./js/jquery.min.js"></script>
+    <script src="./js/aos.js"></script>
     <script src="./js/app.js"></script>
+
+    <script>
+        const phoneInput = document.querySelector('[name="phone-input"]');
+        const maskOptions = {
+            mask: '+{7}(000)000-00-00',
+            placeholderChar: '_',
+            lazy: false,
+        };
+
+        const phoneMask = IMask(phoneInput, maskOptions);
+        const formModal = document.querySelector('.form-modal');
+        const formInModal = formModal.querySelector('.form-modal__content');
+        const nameField = formInModal.querySelector('[name="name-input"]')
+        const phoneField = formInModal.querySelector('[name="phone-input"]')
+        const agree = formInModal.querySelector('.agree-cb');
+
+
+        document.addEventListener('pointerdown', (e) => {
+            const target = e.target;
+            if (target.closest('.form-modal') && !target.closest('.form-modal__content')) {
+                formModal.classList.remove('show');
+            }
+        });
+
+        document.querySelectorAll('.form-input').forEach(input => {
+            input.addEventListener('input', (e) => {
+                input.closest('.form-modal__field').classList.remove('err')
+            })
+        })
+
+        agree.addEventListener('input', (e) => {
+            agree.closest('.agree-label').classList.remove('err')
+        })
+
+
+        formInModal.addEventListener('submit', (e) => {
+            e.preventDefault();
+            if (!agree.checked) {
+                agree.closest('.agree-label').classList.add('err')
+            }
+
+            if (phoneField.value.trim().replace(/\D/g, "").length < 11) {
+                phoneField.closest('.form-modal__field').classList.add('err')
+            }
+
+            if (nameField.value.trim().length < 2) {
+                nameField.closest('.form-modal__field').classList.add('err')
+            }
+
+            if (formModal.querySelector('.err')) return;
+
+            const formData = new FormData()
+            formData.append('name', nameField.value.trim());
+            formData.append('phone', phoneField.value.trim().replace(/\D/g, ""));
+
+            formModal.classList.add('sending');
+
+            $.ajax({
+                url: '/ajax/ajax.php',
+                type: 'POST',
+                data: formData,
+                processData: false,
+                contentType: false,
+                success: function (response) {
+                    // Успешная отправка
+                    setTimeout(() => {
+                        formModal.classList.remove('sending');
+                        setTimeout(() => {
+                            formModal.classList.add('complited');
+                            formInModal.reset()
+                        }, 350);
+                    }, 2000);
+                },
+                error: function (xhr, status, error) {
+                    console.error('Ошибка :', error);
+                }
+            });
+
+        });
+
+
+
+    </script>
 </body>
 
 </html>
